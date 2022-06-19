@@ -23,10 +23,10 @@ const DocsRating = ({label}) => {
   return (
     <div className="docsRating">
       {haveVoted ? (
-        'Thanks for letting us know!'
+        '感謝你讓我們知道!'
       ) : (
         <>
-          Is this page useful?
+          這個教學對你幫助嗎?
           <svg
             className="i_thumbsup"
             alt="Like"

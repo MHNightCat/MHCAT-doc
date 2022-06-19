@@ -1,0 +1,74 @@
+{
+  "docs": {
+    "入門": [
+      "getting_started",
+      "getting_errors"
+    ], 
+    "公告系統指令": [
+      "ann_set",
+      "ann"
+    ],
+    "加入設置指令": [
+      "join_message",
+      "join_role",
+      "join_role_delete"
+    ],
+    "實用指令資訊": [
+      "help",
+      "info",
+      "translate"
+    ],
+    "抽獎系統指令 ": [
+      "lotter"
+    ],
+    "私人頻道指令": [
+      "ticket_set",
+      "ticket_delete"
+    ],
+    "管理系統指令": [
+      "delete_message",
+      "logging_set",
+      "get_role_button",
+      "get_role_reaction"
+    ],
+    "統計系統指令": [
+      "statistics_screach",
+      "statistics_create",
+      "statistics_delete"
+    ],
+    "經驗系統指令": [
+      "chat_xp_set",
+      "chat_xp_delete",
+      "chat_xp",
+      "voice_xp_set",
+      "voice_xp_delete",
+      "voice_xp"
+    ],
+    "語音包廂指令": [
+      "voice_box_set",
+      "voice_box_delete"
+    ],
+    "警告系統指令": [
+      "warn_set",
+      "warn",
+      "warn_delete",
+      "warn_delete_all",
+      "warn_secran"
+    ],
+    "音樂系統指令": [
+      "music",
+      "music_info"
+    ],
+    "驗證系統指令": [
+      "verify_set",
+      "verify"
+    ],
+    "常見問題": [
+      "faq"
+    ],
+    "其他": [
+      "thanks",
+      "copyright"
+    ]
+  }
+}

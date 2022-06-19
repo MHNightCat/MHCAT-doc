@@ -581,10 +581,6 @@ a[class*="tagRegular"] {
     transition: transform 0.5s;
   }
 
-  .navbar__brand:hover .navbar__logo {
-    transform: rotate(180deg) scale(0.9);
-  }
-
   .clean-btn:hover {
     background: var(--ifm-color-emphasis-800);
   }

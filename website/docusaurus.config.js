@@ -2,7 +2,7 @@ const users = require('./showcase.json');
 const versions = require('./versions.json');
 
 const lastVersion = versions[0];
-const copyright = `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc.`;
+const copyright = `MHCAT © ${new Date().getFullYear()}`;
 
 const commonDocsOptions = {
   breadcrumbs: false,
@@ -15,11 +15,11 @@ const commonDocsOptions = {
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'React Native',
-  tagline: 'A framework for building native apps using React',
-  organizationName: 'facebook',
-  projectName: 'react-native',
-  url: 'https://reactnative.dev',
+  title: 'MHCAT',
+  tagline: '以最快的速度完成專屬於你的Discord伺服器',
+  organizationName: 'MHCAT',
+  projectName: 'MHCAT-DOC',
+  url: 'https://mhcat.xyz',
   baseUrl: '/',
   clientModules: [require.resolve('./snackPlayerInitializer.js')],
   trailingSlash: false, // because trailing slashes can break some existing relative links
@@ -41,8 +41,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-tw',
+    locales: ['zh-tw'],
   },
   onBrokenLinks: 'throw',
   webpack: {
@@ -184,16 +184,16 @@ module.exports = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      announcementBar: {
+      /*announcementBar: {
         id: 'support_ukraine',
         content:
-          'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>.',
+          '', 
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
-      },
+      },*/
       prism: {
-        defaultLanguage: 'jsx',
+        defaultLanguage: 'jsx', 
         theme: require('./core/PrismTheme'),
         additionalLanguages: [
           'java',
@@ -206,64 +206,33 @@ module.exports = {
         ],
       },
       navbar: {
-        title: 'React Native',
+        title: 'MHCAT',
         logo: {
           src: 'img/header_logo.svg',
-          alt: 'React Native',
         },
         style: 'dark',
         items: [
           {
-            label: 'Guides',
+            label: '開始使用',
             type: 'doc',
-            docId: 'getting-started',
+            docId: 'getting_started',
             position: 'right',
           },
           {
-            label: 'Components',
+            label: '常見問題',
             type: 'doc',
-            docId: 'components-and-apis',
+            docId: 'faq',
             position: 'right',
           },
           {
-            label: 'API',
-            type: 'doc',
-            docId: 'accessibilityinfo',
+            label: '邀請我',
+            href: 'https://dsc.gg/mhcat',
             position: 'right',
           },
           {
-            label: 'Architecture',
-            type: 'doc',
-            docId: 'architecture-overview',
+            label: '前往支援伺服器',
+            href: 'https://dsc.gg/mhcatsever',
             position: 'right',
-            docsPluginId: 'architecture',
-          },
-          {
-            to: '/contributing/how-to-contribute',
-            label: 'Contributing',
-            position: 'right',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'right',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            dropdownActiveClassDisabled: true,
-            dropdownItemsAfter: [
-              {
-                to: '/versions',
-                label: 'All versions',
-              },
-            ],
-          },
-          {
-            href: 'https://github.com/facebook/react-native',
-            'aria-label': 'GitHub repository',
-            position: 'right',
-            className: 'navbar-github-link',
           },
         ],
       },
@@ -272,91 +241,65 @@ module.exports = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '連結',
             items: [
               {
-                label: 'Getting Started',
-                to: 'docs/getting-started',
+                label: 'MHCAT首頁',
+                href: 'https://mhcat.xyz',
               },
               {
-                label: 'Tutorial',
-                to: 'docs/tutorial',
-              },
-              {
-                label: 'Components and APIs',
-                to: 'docs/components-and-apis',
-              },
-              {
-                label: 'More Resources',
-                to: 'docs/more-resources',
+                label: '邀請我',
+                href: 'https://dsc.gg/mhcat',
+              },{
+                label: '支援伺服器',
+                href: 'https://dsc.gg/mhcatsever',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '文檔',
             items: [
               {
-                label: 'The React Native Community',
-                to: 'help',
+                label: '開始使用',
+                to: 'docs/getting_started',
               },
               {
-                label: "Who's using React Native?",
-                to: 'showcase',
+                label: '常見問題',
+                to: 'docs/faq',
               },
               {
-                label: 'Ask Questions on Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/react-native',
+                label: '教學',
+                to: 'docs/getting_started',
+              }
+            ],
+          },
+          {
+            title: '為我投票',
+            items: [
+              {
+                label: 'Discord tw',
+                href: 'https://discordservers.tw/bots/964185876559196181',
               },
               {
-                label: 'Contributor Guide',
-                href: 'https://github.com/facebook/react-native/blob/main/CONTRIBUTING.md',
-              },
-              {
-                label: 'DEV Community',
-                href: 'https://dev.to/t/reactnative',
+                label: 'top.gg',
+                href: 'https://top.gg/bot/964185876559196181',
               },
             ],
           },
           {
-            title: 'Find us',
+            title: '相關連結',
             items: [
               {
-                label: 'Blog',
-                to: 'blog',
-              },
-              {
-                label: 'Twitter',
+                label: '隱私權政策',
                 href: 'https://twitter.com/reactnative',
               },
               {
-                label: 'GitHub',
+                label: '服務條款',
                 href: 'https://github.com/facebook/react-native',
               },
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'React',
-                href: 'https://reactjs.org/',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://opensource.fb.com/legal/privacy/',
-              },
-              {
-                label: 'Terms of Service',
-                href: 'https://opensource.fb.com/legal/terms/',
-              },
-            ],
-          },
         ],
-        logo: {
-          alt: 'Facebook Open Source Logo',
-          src: 'img/oss_logo.png',
-          href: 'https://opensource.fb.com/',
-        },
         copyright,
       },
       algolia: {

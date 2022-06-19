@@ -14,19 +14,20 @@ import {setupHeaderAnimations} from './animations/_headerAnimation';
 
 const textContent = {
   intro: `
-React Native combines the best parts of native development with React,
-a best-in-class JavaScript library for building user interfaces.
+是不是每次經驗系統永遠都只能看文字聊天的活躍度?
+而偏偏你又是那個在語音很會講話，但不怎麼打字的那個?
 <br/><br/>
-<strong>Use a little—or a lot</strong>. You can use React Native today in your existing
-Android and iOS projects or you can create a whole new app from scratch.
+如果你有以上需求的話
+試試我們這隻機器人吧，
+獨創的語音經驗系統，讓你在語音頻道裡的活躍都被記錄下來。
   `,
   nativeCode: `
-React primitives render to native platform UI, meaning your app uses the
-same native platform APIs other apps do.
+專業的音樂系統，這項系統除了讓你不必再背指令名稱<br/>
+我們採取一鍵式指令，指需要打一次指令。即可完成所有操作
 <br/><br/>
-<strong>Many platforms</strong>, one React. Create platform-specific versions of components
-so a single codebase can share code across platforms. With React Native,
-one team can maintain two platforms and share a common technology—React.
+除了上述的特色外，還有歌詞查找系統<br/>
+不怕再邊玩遊戲邊聽歌的時候，還要開一個瀏覽器，找歌詞<br/>
+現在你只需要點一下按鈕即可跑出歌詞
   `,
   codeExample: `
 import React from 'react';
@@ -60,9 +61,9 @@ const WelcomeScreen = () => (
 );
   `,
   forEveryone: `
-React Native lets you create truly native apps and doesn't compromise your users' experiences.
-It provides a core set of platform agnostic native components like <code>View</code>, <code>Text</code>, and <code>Image</code>
-that map directly to the platform’s native UI building blocks.
+  超過10種類別，30種指令，並且全部都是採用斜線命令設計<br/>
+  不怕忘記指令名稱，還有專業的文檔網站，不再擔心不會使用指令<br/>
+  除此之外，我們還有Discord支援伺服器<br/>遇到問題也可以到這裡詢問，都會有專人為你解答
   `,
   crossPlatform: `
 React components wrap existing native code and interact with native APIs via
@@ -110,13 +111,13 @@ function HomeCallToAction() {
         type="primary"
         href={useBaseUrl('docs/getting-started')}
         target="_self">
-        Get started
+        邀請我
       </ActionButton>
       <ActionButton
         type="secondary"
         href={useBaseUrl('docs/tutorial')}
         target="_self">
-        Learn basics
+        教學文檔
       </ActionButton>
     </>
   );
@@ -151,7 +152,7 @@ function Section({
   element = 'section',
   children,
   className,
-  background = 'light',
+  background = 'Dark',
 }) {
   const El = element;
   return <El className={`Section ${className} ${background}`}>{children}</El>;
@@ -185,78 +186,19 @@ function ScreenRect({className, fill, stroke}) {
   );
 }
 
-function LogoAnimation() {
-  return (
-    <svg
-      className="LogoAnimation init"
-      width={350}
-      height={350}
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="-200 -200 400 400">
-      <title>React Logo</title>
-      <clipPath id="screen">
-        <ScreenRect fill="none" stroke="gray" />
-      </clipPath>
-      <rect
-        x="-25"
-        y="120"
-        width="50"
-        height="25"
-        rx="2"
-        fill="white"
-        stroke="none"
-        className="stand"
-      />
-      <polygon
-        points="-125,90 125,90 160,145 -160,145"
-        fill="white"
-        stroke="white"
-        strokeWidth="5"
-        strokeLinejoin="round"
-        className="base"
-      />
-      <ScreenRect className="background" stroke="none" />
-      <g clipPath="url(#screen)" className="logo">
-        <g className="logoInner">
-          <circle cx="0" cy="0" r="30" fill="#61dafb" />
-          <g stroke="#61dafb" strokeWidth="15" fill="none" id="logo">
-            <ellipse rx="165" ry="64" />
-            <ellipse rx="165" ry="64" transform="rotate(60)" />
-            <ellipse rx="165" ry="64" transform="rotate(120)" />
-          </g>
-        </g>
-        <line
-          x1="-30"
-          x2="30"
-          y1="130"
-          y2="130"
-          stroke="white"
-          strokeWidth="8"
-          strokeLinecap="round"
-          className="speaker"
-        />
-      </g>
-      <ScreenRect fill="none" stroke="white" />
-    </svg>
-  );
-}
 
 function HeaderHero() {
   return (
     <Section background="dark" className="HeaderHero">
-      <div className="socialLinks">
-        <TwitterButton accountName="reactnative" />
-        <GitHubStarButton />
-      </div>
+      <div className="buttons">
+            </div>
       <TwoColumns
         reverse
-        columnOne={<LogoAnimation />}
         columnTwo={
           <>
-            <h1 className="title">React Native</h1>
-            <p className="tagline">Learn once, write&nbsp;anywhere.</p>
+            <h1 className="title">MHCAT</h1>
+            <p className="tagline">打造專屬於你的Discord伺服器&nbsp;</p>
             <div className="buttons">
-              <HomeCallToAction />
             </div>
           </>
         }
@@ -272,7 +214,7 @@ function NativeApps() {
         reverse
         columnOne={
           <TextColumn
-            title="Create native apps for Android and iOS using React"
+            title="獨創的語音經驗系統"
             text={textContent.intro}
           />
         }
@@ -288,15 +230,14 @@ function NativeCode() {
       <TwoColumns
         columnOne={
           <TextColumn
-            title="Written in JavaScript—rendered with native code"
+            title="專業的音樂系統"
             text={textContent.nativeCode}
           />
         }
-        columnTwo={
-          <CodeBlock language="jsx">{textContent.codeExample}</CodeBlock>
-        }
+        columnTwo={<img alt="" src={useBaseUrl('img/dsadsadsa.png')} />}
+
       />
-    </Section>
+    </Section>  
   );
 }
 
@@ -307,13 +248,13 @@ function NativeDevelopment() {
         reverse
         columnOne={
           <TextColumn
-            title="Native Development For Everyone"
+            title="大量的功能"
             text={textContent.forEveryone}
           />
         }
         columnTwo={
           <div className="dissection">
-            {[0, 1, 2, 3].map(i => (
+            {[0, 1, 2, 3, 4, 5].map(i => (
               <img
                 alt=""
                 key={i}
@@ -525,18 +466,10 @@ function GetStarted() {
   return (
     <Section className="GetStarted" background="dark">
       <div className="content">
-        <Heading text="Give it a try" />
+        <Heading text="給我一次機會" />
         <ol className="steps">
-          <li>
-            <p>Run this</p>
-            <div className="terminal">
-              <code>npx react-native init MyTestApp</code>
-            </div>
-          </li>
-          <li>
-            <p>Read these</p>
+            <p>或許讀完以上介紹後，你依然沒有心動!<br/>但是，給我一次機會，保證讓你驚豔</p>
             <HomeCallToAction />
-          </li>
         </ol>
       </div>
     </Section>
@@ -552,27 +485,23 @@ const Index = () => {
   useHomePageAnimations();
   return (
     <Layout
-      description="A framework for building native apps using React"
+      description="以最簡單及快速的方式打造你的Discord伺服器"
       wrapperClassName="homepage">
       <Head>
-        <title>React Native · Learn once, write anywhere</title>
+        <title>MHCAT</title>
         <meta
           property="og:title"
-          content="React Native · Learn once, write anywhere"
+          content="打造專屬於你的Discord伺服器"
         />
         <meta
           property="twitter:title"
-          content="React Native · Learn once, write anywhere"
+          content="打造專屬於你的Discord伺服器"
         />
       </Head>
       <HeaderHero />
       <NativeApps />
       <NativeCode />
       <NativeDevelopment />
-      <CrossPlatform />
-      <FastRefresh />
-      <VideoContent />
-      <Community />
       <GetStarted />
     </Layout>
   );
