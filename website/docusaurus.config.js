@@ -291,11 +291,11 @@ module.exports = {
             items: [
               {
                 label: '隱私權政策',
-                href: 'https://twitter.com/reactnative',
+                to: 'docs/privacy',
               },
               {
                 label: '服務條款',
-                href: 'https://github.com/facebook/react-native',
+                to: 'docs/Terms_of_Service',
               },
             ],
           },
