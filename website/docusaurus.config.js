@@ -9,7 +9,7 @@ const commonDocsOptions = {
   showLastUpdateAuthor: false,
   showLastUpdateTime: true,
   editUrl:
-    'https://github.com/facebook/react-native-website/blob/master/website/',
+    'https://github.com/MHNightCat/MHCAT-doc/blob/main/',
   remarkPlugins: [require('@react-native-website/remark-snackplayer')],
 };
 
@@ -303,8 +303,8 @@ module.exports = {
         copyright,
       },
       algolia: {
-        appId: '8TDSE0OHGQ',
-        apiKey: '83cd239c72f9f8b0ed270a04b1185288',
+        appId: 'X8VTV34N9X',
+        apiKey: 'e568747cfe82d0361c863485cb55af08',
         indexName: 'react-native-v2',
         contextualSearch: true,
       },

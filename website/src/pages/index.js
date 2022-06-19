@@ -109,13 +109,13 @@ function HomeCallToAction() {
     <>
       <ActionButton
         type="primary"
-        href={useBaseUrl('docs/getting-started')}
+        href="https://dsc.gg/mhcat"
         target="_self">
         邀請我
       </ActionButton>
       <ActionButton
         type="secondary"
-        href={useBaseUrl('docs/tutorial')}
+        href={useBaseUrl('docs/getting_started')}
         target="_self">
         教學文檔
       </ActionButton>
@@ -218,7 +218,7 @@ function NativeApps() {
             text={textContent.intro}
           />
         }
-        columnTwo={<img alt="" src={useBaseUrl('img/homepage/phones.png')} />}
+        columnTwo={<img alt="" src={useBaseUrl('img/dsa.png')} />}
       />
     </Section>
   );

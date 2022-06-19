@@ -36,7 +36,7 @@
       "statistics_create",
       "statistics_delete"
     ],
-    "經驗系統指令": [
+    "經驗系統指令": [ 
       "chat_xp_set",
       "chat_xp_delete",
       "chat_xp",
