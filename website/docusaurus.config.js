@@ -44,7 +44,7 @@ module.exports = {
     defaultLocale: 'zh-tw',
     locales: ['zh-tw'],
   },
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   webpack: {
     jsLoader: isServer => ({
       loader: require.resolve('esbuild-loader'),
