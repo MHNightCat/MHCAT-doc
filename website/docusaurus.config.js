@@ -9,7 +9,7 @@ const commonDocsOptions = {
   showLastUpdateAuthor: false,
   showLastUpdateTime: true,
   editUrl:
-    'https://github.com/MHNightCat/MHCAT-doc/blob/main/',
+    'https://github.com/MHNightCat/MHCAT-doc/blob/main/main',
   remarkPlugins: [require('@react-native-website/remark-snackplayer')],
 };
 

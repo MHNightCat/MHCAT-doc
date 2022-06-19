@@ -19,10 +19,10 @@ const DocsRating = ({label}) => {
     }
     setHaveVoted(true);
   };
-
+ 
   return (
     <div className="docsRating">
-      {haveVoted ? (
+      {haveVoted ? ( 
         '感謝你讓我們知道!'
       ) : (
         <>

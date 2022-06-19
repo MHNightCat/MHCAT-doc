@@ -11,7 +11,7 @@
 為文檔貢獻你需要:<br/>
 1.了解 MHCAT 如何使用<br/>
 2.對 markdown 有基本知識(如果不會的話可以到https://www.mdeditor.tw/)<br/>
-前往目錄`website/versioned_docs/version-1.0.0`(這裡面的檔案為 MHCAT 的文檔檔案)<br/>
+前往目錄`docs/`(這裡面的檔案為 MHCAT 的文檔檔案)<br/>
 
 找到你要貢獻的文件將他下載下來<br/>
 接著你就可以開始編輯這個文檔了<br/>
