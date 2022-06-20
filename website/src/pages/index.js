@@ -485,17 +485,17 @@ const Index = () => {
   useHomePageAnimations();
   return (
     <Layout
-      description="以最簡單及快速的方式打造你的Discord伺服器"
+      description="使用MHCAT以最簡單及快速的方式打造你的Discord伺服器"
       wrapperClassName="homepage">
       <Head>
         <title>MHCAT</title>
         <meta
           property="og:title"
-          content="打造專屬於你的Discord伺服器"
+          content="MHCAT帶給你更好的discord體驗"
         />
         <meta
           property="twitter:title"
-          content="打造專屬於你的Discord伺服器"
+          content="MHCAT帶給你更好的discord體驗"
         />
       </Head>
       <HeaderHero />

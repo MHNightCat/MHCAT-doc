@@ -16,7 +16,7 @@ const commonDocsOptions = {
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'MHCAT',
-  tagline: '以最快的速度完成專屬於你的Discord伺服器',
+  tagline: '使用MHCAT以最快的速度完成專屬於你的Discord伺服器',
   organizationName: 'MHCAT',
   projectName: 'MHCAT-DOC',
   url: 'https://mhcat.xyz',
@@ -311,12 +311,12 @@ module.exports = {
       metadata: [
         {
           property: 'og:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
+          content: 'https://media.discordapp.net/attachments/983705288551043123/988289317120139314/52eebf5c2ac461fe.png?width=1246&height=701',
         },
         {name: 'twitter:card', content: 'summary_large_image'},
         {
           name: 'twitter:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
+          content: 'https://media.discordapp.net/attachments/983705288551043123/988289317120139314/52eebf5c2ac461fe.png?width=1246&height=701',
         },
         {name: 'twitter:site', content: '@reactnative'},
       ],
