@@ -1,6 +1,7 @@
 {
   "docs": {
     "入門": [
+      "top",
       "getting_started",
       "getting_errors"
     ], 
@@ -64,7 +65,8 @@
       "verify"
     ],
     "常見問題": [
-      "faq"
+      "faq",
+      "music_lag"
     ],
     "其他": [
       "thanks",
