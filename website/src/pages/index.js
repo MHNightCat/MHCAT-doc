@@ -63,7 +63,7 @@ const WelcomeScreen = () => (
   forEveryone: `
   超過10種類別，30種指令，並且全部都是採用斜線命令設計<br/>
   不怕忘記指令名稱，還有專業的文檔網站，不再擔心不會使用指令<br/>
-  除此之外，我們還有Discord支援伺服器<br/>遇到問題也可以到這裡詢問，都會有專人為你解答
+  除此之外，我們還有Discord支援伺服器<br/>遇到問題也可以到這裡詢問，都會有專人為你解答<br/><br/>
   `,
   crossPlatform: `
 React components wrap existing native code and interact with native APIs via
