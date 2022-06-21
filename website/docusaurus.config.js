@@ -30,8 +30,10 @@ module.exports = {
       defer: true,
     },
     {
+      async: true,
+      defer:true,
       src:"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3633235696268475",
-
+      crossorigin:"anonymous"
     },
     {
       src: 'https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd8ryO5qrZo8Exadq9qmt1wtm4_2FdZGEAKHDFEt_2BBlwwM4.js',
