@@ -26,7 +26,7 @@ const DocsRating = ({label}) => {
         '感謝你讓我們知道!'
       ) : (
         <>
-          這個教學對你幫助嗎?
+          這個頁面對你有幫助嗎?
           <svg
             className="i_thumbsup"
             alt="Like"

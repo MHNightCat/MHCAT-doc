@@ -4,7 +4,10 @@
  
 # 文檔網站說明
 
-該文檔為使用 React 的開源文檔模板
+該文檔為使用 React 的開源文檔模板<br/>
+
+該網站使用Netlify進行架設<br/>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/caa443ee-1d34-4a56-8855-f6bea508051c/deploy-status)](https://app.netlify.com/sites/steady-brigadeiros-18a82e/deploys)<br/>
 
 # 為文檔貢獻
 

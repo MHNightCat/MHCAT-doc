@@ -230,8 +230,12 @@ module.exports = {
             position: 'right',
           },
           {
-            label: '前往支援伺服器',
+            label: '支援伺服器',
             href: 'https://dsc.gg/mhcatsever',
+            position: 'right',
+          },{
+            label: '請我喝杯咖啡',
+            href: 'https://core.newebpay.com/EPG/MS1612979137/noyCV9',
             position: 'right',
           },
         ],
@@ -253,6 +257,9 @@ module.exports = {
               },{
                 label: '支援伺服器',
                 href: 'https://dsc.gg/mhcatsever',
+              },{
+                label: '請我喝杯咖啡',
+                href: 'https://core.newebpay.com/EPG/MS1612979137/noyCV9',
               },
             ],
           },
