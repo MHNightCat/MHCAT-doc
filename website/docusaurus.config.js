@@ -15,6 +15,7 @@ const commonDocsOptions = {
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
+  plugins: ['docusaurus-plugin-google-adsense'], 
   title: 'MHCAT',
   tagline: '使用MHCAT以最快的速度完成專屬於你的Discord伺服器',
   organizationName: 'MHCAT',
@@ -27,6 +28,10 @@ module.exports = {
     {
       src: 'https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js',
       defer: true,
+    },
+    {
+      src:"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3633235696268475",
+
     },
     {
       src: 'https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd8ryO5qrZo8Exadq9qmt1wtm4_2FdZGEAKHDFEt_2BBlwwM4.js',
@@ -93,10 +98,10 @@ module.exports = {
           ],
         },
         googleAnalytics: {
-          trackingID: 'UA-41298772-2',
+          trackingID: 'G-HPW3PVLXP1',
         },
         gtag: {
-          trackingID: 'UA-41298772-2',
+          trackingID: 'G-HPW3PVLXP1',
         },
       }),
     ],
@@ -192,6 +197,9 @@ module.exports = {
         textColor: '#fff',
         isCloseable: false,
       },*/
+      googleAdsense: {
+        dataAdClient: 'ca-pub-3633235696268475',
+      },
       prism: {
         defaultLanguage: 'jsx', 
         theme: require('./core/PrismTheme'),

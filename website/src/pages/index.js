@@ -497,6 +497,8 @@ const Index = () => {
           property="twitter:title"
           content="MHCAT帶給你更好的discord體驗"
         />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3633235696268475"
+        crossorigin="anonymous"></script>
       </Head>
       <HeaderHero />
       <NativeApps />
