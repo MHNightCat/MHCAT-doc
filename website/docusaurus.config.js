@@ -31,8 +31,8 @@ module.exports = {
     },
     {
       async: true,
-      defer:true,
       src:"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3633235696268475",
+      defer:true,
       crossorigin:"anonymous"
     },
     {
@@ -199,9 +199,6 @@ module.exports = {
         textColor: '#fff',
         isCloseable: false,
       },*/
-      googleAdsense: {
-        dataAdClient: 'ca-pub-3633235696268475',
-      },
       prism: {
         defaultLanguage: 'jsx', 
         theme: require('./core/PrismTheme'),
