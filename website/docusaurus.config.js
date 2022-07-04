@@ -70,7 +70,7 @@ module.exports = {
         docs: {
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.json'),
-          editCurrentVersion: true,
+          editCurrentVersion: true,    
           onlyIncludeVersions:
             process.env.PREVIEW_DEPLOY === 'true'
               ? ['current', ...versions.slice(0, 2)]
@@ -325,12 +325,12 @@ module.exports = {
       metadata: [
         {
           property: 'og:image',
-          content: 'https://media.discordapp.net/attachments/983705288551043123/988289317120139314/52eebf5c2ac461fe.png?width=1246&height=701',
+          content: 'https://media.discordapp.net/attachments/991337796960784424/993456489710755920/MHCAT_Discord.png',
         },
         {name: 'twitter:card', content: 'summary_large_image'},
         {
           name: 'twitter:image',
-          content: 'https://media.discordapp.net/attachments/983705288551043123/988289317120139314/52eebf5c2ac461fe.png?width=1246&height=701',
+          content: 'https://media.discordapp.net/attachments/991337796960784424/993456489710755920/MHCAT_Discord.png',
         },
         {name: 'twitter:site', content: '@reactnative'},
       ],
