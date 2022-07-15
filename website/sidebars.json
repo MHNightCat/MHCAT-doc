@@ -3,7 +3,14 @@
     "入門": [
       "getting_started",
       "getting_errors"
-    ], 
+    ],
+    "備份系統指令": [
+      "backup_set",
+      "backup_list",
+      "backup_Inquire",
+      "backup_delete",
+      "backup_load"
+    ],
     "公告系統指令": [
       "ann_set",
       "ann"
@@ -11,12 +18,25 @@
     "加入設置指令": [
       "join_message",
       "join_role",
-      "join_role_delete"
+      "join_role_delete",
+      "leave_message"      
     ],
     "實用指令資訊": [
+      "auto_chat",
+      "delete_chat",
       "help",
       "info",
       "translate"
+    ],
+    "扭蛋系統指令": [
+      "required_coins",
+      "snig",
+      "coin",
+      "coin_increase",
+      "prize_add",
+      "prize_removal",
+      "prize_search",
+      "gashapon"
     ],
     "抽獎系統指令 ": [
       "lotter"
@@ -43,6 +63,11 @@
       "voice_xp_set",
       "voice_xp_delete", 
       "voice_xp"
+    ],
+    "自動通知指令": [
+      "corn",
+      "corn_list",
+      "corn_delete"
     ],
     "語音包廂指令": [
       "voice_box_set",

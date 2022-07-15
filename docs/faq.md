@@ -37,9 +37,9 @@ title: 常見問題
 
 **➥  就要改成如圖2(對身分組按住不放即可拖曳)**
 
-![](https://media.discordapp.net/attachments/983054761500745768/985233112718008420/2022-06-12_012121.png)
+![](https://media.discordapp.net/attachments/977960436685217832/991333461723988018/unknown.png)
 
-![](https://media.discordapp.net/attachments/983054761500745768/985233112973848676/2022-06-12_012131.png)
+![](https://media.discordapp.net/attachments/977960436685217832/991333343553667194/unknown.png)
 
 > 如果還是有問題請前往支援伺服器
 
