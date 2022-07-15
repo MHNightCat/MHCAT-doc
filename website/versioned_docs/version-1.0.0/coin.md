@@ -15,7 +15,7 @@ title: 扭蛋代幣
 
 **打上之後就會看到:**
 
-![](https://cdn.discordapp.com/attachments/991337796960784424/997435298134884352/unknown.png)
+![](https://cdn.discordapp.com/attachments/991337796960784424/997470140402761849/unknown.png)
 
 **就會看到這位使用者的扭蛋資訊囉**
 
