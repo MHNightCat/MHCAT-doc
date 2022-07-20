@@ -8,15 +8,15 @@ title: 常見問題
 ## **[你可能會想知道因為lag怎麼辦 點我前往](https://mhcat.xyz/docs/music_lag)**
 
 ### Q1:為何會有像這樣的emoji顯示錯誤?
-![](https://cdn.discordapp.com/attachments/991337796960784424/999341178703052800/unknown.png)
-**首先請將@everyone的`使用外部表情權限`打開!!**
-![](https://cdn.discordapp.com/attachments/991337796960784424/999341479292063764/unknown.png)
+![](https://cdn.discordapp.com/attachments/991337796960784424/999341178703052800/unknown.png)<br/>
+**首先請將@everyone的`使用外部表情權限`打開!!**<br/>
+![](https://cdn.discordapp.com/attachments/991337796960784424/999341479292063764/unknown.png)<br/>
 
-**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**
-**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**
-**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**
+**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**<br/>
+**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**<br/>
+**⚠是`@everyone`身分組，不是`@MHCAT`身分組!!!!!**<br/>
 
-**很重要所以要講三遍!!!**
+**很重要所以要講三遍!!!**<br/>
 
 > 如果還是有問題請前往支援伺服器
 
