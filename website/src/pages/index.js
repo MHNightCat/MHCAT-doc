@@ -21,13 +21,19 @@ const textContent = {
 試試我們這隻機器人吧，
 獨創的語音經驗系統，讓你在語音頻道裡的活躍都被記錄下來。
   `,
+  WTFisthis: `
+最棒的discord小遊戲
+包括知識王，21點
+結合代幣系統，達成最棒的小遊戲
+使用代幣與對手賭注來讓遊戲更佳刺激!
+知識王有超過100個題目，讓你玩不膩!!!
+    `,
   nativeCode: `
-專業的音樂系統，這項系統除了讓你不必再背指令名稱<br/>
-我們採取一鍵式指令，指需要打一次指令。即可完成所有操作
-<br/><br/>
-除了上述的特色外，還有歌詞查找系統<br/>
-不怕再邊玩遊戲邊聽歌的時候，還要開一個瀏覽器，找歌詞<br/>
-現在你只需要點一下按鈕即可跑出歌詞
+獨創的扭蛋系統，讓你的Discord伺服器不再只是抽獎
+可以根據成員的活耀程度及每日簽到
+來更好的讓你的伺服器更加活
+而代幣商店也是根據成員活躍量來給予代幣
+來讓使用者自己購買身分組或是獎品!!!
   `,
   codeExample: `
 import React from 'react';
@@ -230,14 +236,31 @@ function NativeCode() {
       <TwoColumns
         columnOne={
           <TextColumn
-            title="專業的音樂系統"
+            title="扭蛋系統及代幣商店"
             text={textContent.nativeCode}
           />
         }
-        columnTwo={<img alt="" src={useBaseUrl('img/dsadsadsa.png')} />}
+        columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-08-13 121804.png')} />}
 
       />
     </Section>  
+  );
+}
+
+function Iloveuuarehateme() {
+  return (
+    <Section className="NativeApps" background="light">
+      <TwoColumns
+        reverse
+        columnOne={
+          <TextColumn
+            title="更多更多的小遊戲"
+            text={textContent.intro}
+          />
+        }
+        columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-08-13 122336.png')} />}
+      />
+    </Section>
   );
 }
 
@@ -503,6 +526,7 @@ const Index = () => {
       <HeaderHero />
       <NativeApps />
       <NativeCode />
+      <Iloveuuarehateme />
       <NativeDevelopment />
       <GetStarted />
     </Layout>
