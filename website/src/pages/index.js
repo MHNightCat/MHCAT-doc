@@ -13,28 +13,37 @@ import {setupDissectionAnimation} from './animations/_dissectionAnimation';
 import {setupHeaderAnimations} from './animations/_headerAnimation';
 
 const textContent = {
+  
+  lotter: `
+<strong>實用的抽獎系統<br />
+超人性化的設定介面以及重抽介面<br />
+重抽獎甚至連指令都不需要打<br />
+還可以知道每個人的參加時間防止開小號<br />
+也可以設置某些身分組不能參加<br />
+或是只有某些身分組可以參加<br />
+配合等級系統的給予身分組，就可以防止淺水的人參加!!</strong>
+  `,
   intro: `
-是不是每次經驗系統永遠都只能看文字聊天的活躍度?
-而偏偏你又是那個在語音很會講話，但不怎麼打字的那個?
+<strong>是不是每次經驗系統永遠都只能看文字聊天的活躍度?<br/>
+而偏偏你又是那個在語音很會講話，但不怎麼打字的那個?<br/>
 <br/><br/>
-如果你有以上需求的話
-試試我們這隻機器人吧，
-獨創的語音經驗系統，讓你在語音頻道裡的活躍都被記錄下來。
+如果你有以上需求的話<br/>
+試試我們這隻機器人吧，<br/>
+獨創的語音經驗系統，讓你在語音頻道裡的活躍都被記錄下來。</strong>
   `,
   WTFisthis: `
-最棒的discord小遊戲
-包括知識王，21點
-結合代幣系統，達成最棒的小遊戲
-使用代幣與對手賭注來讓遊戲更佳刺激!
-知識王有超過100個題目，讓你玩不膩!!!
+<strong>最棒的discord小遊戲<br/>
+包括知識王，21點<br/>
+結合代幣系統，達成最棒的小遊戲<br/>
+使用代幣與對手賭注來讓遊戲更佳刺激!<br/>
+知識王有超過100個題目，讓你玩不膩!!!</strong>
     `,
   nativeCode: `
-獨創的扭蛋系統，讓你的Discord伺服器不再只是抽獎
-可以根據成員的活耀程度及每日簽到
-來更好的讓你的伺服器更加活
-而代幣商店也是根據成員活躍量來給予代幣
-來讓使用者自己購買身分組或是獎品!!!
-  `,
+<strong>獨創的扭蛋系統，讓你的Discord伺服器不再只是抽獎<br/>
+可以根據成員的活耀程度及每日簽到<br/>
+來更好的讓你的伺服器更加活<br/>
+而代幣商店也是根據成員活躍量來給予代幣<br/>
+來讓使用者自己購買身分組或是獎品!!!</strong>`,
   codeExample: `
 import React from 'react';
 import {Text, View} from 'react-native';
@@ -67,9 +76,9 @@ const WelcomeScreen = () => (
 );
   `,
   forEveryone: `
-  超過10種類別，30種指令，並且全部都是採用斜線命令設計<br/>
-  不怕忘記指令名稱，還有專業的文檔網站，不再擔心不會使用指令<br/>
-  除此之外，我們還有Discord支援伺服器<br/>遇到問題也可以到這裡詢問，都會有專人為你解答<br/><br/>
+<strong>超過10種類別，30種指令，並且全部都是採用斜線命令設計<br/>
+不怕忘記指令名稱，還有專業的文檔網站，不再擔心不會使用指令<br/>
+除此之外，我們還有Discord支援伺服器<br/>遇到問題也可以到這裡詢問，都會有專人為你解答<br/><br/></strong>
   `,
   crossPlatform: `
 React components wrap existing native code and interact with native APIs via
@@ -240,7 +249,7 @@ function NativeCode() {
             text={textContent.nativeCode}
           />
         }
-        columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-08-13 121804.png')} />}
+        columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-09-20 205256.png')} />}
 
       />
     </Section>  
@@ -255,7 +264,7 @@ function Iloveuuarehateme() {
         columnOne={
           <TextColumn
             title="更多更多的小遊戲"
-            text={textContent.intro}
+            text={textContent.WTFisthis}
           />
         }
         columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-08-13 122336.png')} />}
@@ -263,7 +272,22 @@ function Iloveuuarehateme() {
     </Section>
   );
 }
+function BativeCode() {
+  return (
+    <Section className="NativeCode" background="tint">
+      <TwoColumns
+        columnOne={
+          <TextColumn
+            title="超好用的抽獎系統"
+            text={textContent.lotter}
+          />
+        }
+        columnTwo={<img alt="" src={useBaseUrl('img/Screenshot 2022-09-20 211915.png')} />}
 
+      />
+    </Section>  
+  );
+}
 function NativeDevelopment() {
   return (
     <Section className="NativeDevelopment" background="light">
@@ -527,6 +551,7 @@ const Index = () => {
       <NativeApps />
       <NativeCode />
       <Iloveuuarehateme />
+      <BativeCode />
       <NativeDevelopment />
       <GetStarted />
     </Layout>
