@@ -242,7 +242,7 @@ module.exports = {
             position: 'right',
           },{
             label: '請我喝杯咖啡',
-            href: 'https://core.newebpay.com/EPG/MS1612979137/noyCV9',
+            href: 'https://www.buymeacoffee.com/mhcat',
             position: 'right',
           },
         ],
